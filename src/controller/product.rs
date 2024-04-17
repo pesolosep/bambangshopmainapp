@@ -38,6 +38,7 @@ pub fn delete(id: usize) -> Result<Json<Product>> {
     };
 }
 
+
 #[post("/<id>/publish")]
 pub fn publish(id: usize) -> Result<Json<Product>> {
     return match ProductService::publish(id) {
@@ -45,3 +46,5 @@ pub fn publish(id: usize) -> Result<Json<Product>> {
         Err(e) => Err(e)
     };
 }
+
+
