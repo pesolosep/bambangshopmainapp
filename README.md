@@ -105,3 +105,15 @@ This is the place for you to write reflections:
 - Postman is a tool used for testing the APIs of a project. I find Postman immensely useful for API testing because of its features, such as the ability to make requests with various tokens or body requests, customize the environment for a collection, and the inclusion of monitoring features.
 
 #### Reflection Publisher-3
+1. Observer Pattern has two variations: Push model (publisher pushes data to subscribers) and Pull model (subscribers pull data from publisher). In this tutorial case, which variation of Observer Pattern that we use?
+
+- In this case, we use a variation of the push model of the observer pattern, where the publisher pushes data or updates to the subscriber.
+
+2. What are the advantages and disadvantages of using the other variation of Observer Pattern for this tutorial case? (example: if you answer Q1 with Push, then imagine if we used Pull)
+
+- The advantage of using the pull model variation is that it is more efficient because updates or changes are only received when needed. The disadvantage of this variation is the delay in updates, where new information can only be received when the subscriber requests it.
+
+3. Explain what will happen to the program if we decide to not use multi-threading in the notification process.
+
+- Multi-threading in this project is used to send notifications to all subscribers asynchronously. If multi-threading is not used, then the notifications sent to subscribers will take longer because they are done synchronously.
+
