@@ -61,9 +61,9 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [X] Commit: `Create Notification service struct skeleton.`
     -   [X] Commit: `Implement subscribe function in Notification service.`
     -   [X] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
+    -   [X] Commit: `Implement unsubscribe function in Notification service.`
+    -   [X] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [X] Write answers of your learning module's "Reflection Publisher-2" questions in this README.
 -   **STAGE 3: Implement notification mechanism**
     -   [ ] Commit: `Implement update method in Subscriber model to send notification HTTP requests.`
     -   [ ] Commit: `Implement notify function in Notification service to notify each Subscriber.`
@@ -91,5 +91,17 @@ This is the place for you to write reflections:
 
 
 #### Reflection Publisher-2
+
+1. In the Model-View Controller (MVC) compound pattern, there is no “Service” and “Repository”. Model in MVC covers both data storage and business logic. Explain based on your understanding of design principles, why we need to separate “Service” and “Repository” from a Model?
+
+- In my opinion, services and repositories should be separated from the model to enhance readability and facilitate changes. If all three functionalities are merged into one file, it becomes overly lengthy and difficult to comprehend. Separating them into their respective files makes each file more accessible and easier to modify.
+
+2. What happens if we only use the Model? Explain your imagination on how the interactions between each model (Program, Subscriber, Notification) affect the code complexity for each model?
+
+- Utilizing only a model, by combining services and repositories into one file, leads to poor readability. Moreover, with three models in play — program, subscriber, and notification — the file would become extremely long and challenging to navigate. This complexity in reading also impacts the difficulty of altering or tweaking the code when changes are necessary.
+
+3. Have you explored more about Postman? Tell us how this tool helps you to test your current work. You might want to also list which features in Postman you are interested in or feel like it is helpful to help your Group Project or any of your future software engineering projects.
+
+- Postman is a tool used for testing the APIs of a project. I find Postman immensely useful for API testing because of its features, such as the ability to make requests with various tokens or body requests, customize the environment for a collection, and the inclusion of monitoring features.
 
 #### Reflection Publisher-3
