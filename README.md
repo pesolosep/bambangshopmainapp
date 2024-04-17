@@ -52,7 +52,7 @@ You can install Postman via this website: https://www.postman.com/downloads/
 -   **STAGE 1: Implement models and repositories**
     -   [done] Commit: `Create Subscriber model struct.`
     -   [done] Commit: `Create Notification model struct.`
-    -   [ ] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
+    -   [done] Commit: `Create Subscriber database and Subscriber repository struct skeleton.`
     -   [ ] Commit: `Implement add function in Subscriber repository.`
     -   [ ] Commit: `Implement list_all function in Subscriber repository.`
     -   [ ] Commit: `Implement delete function in Subscriber repository.`
