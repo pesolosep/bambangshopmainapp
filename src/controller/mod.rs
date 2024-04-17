@@ -1,4 +1,6 @@
 pub mod product;
+pub mod subscriber;
+
 
 use rocket::fairing::AdHoc;
 
